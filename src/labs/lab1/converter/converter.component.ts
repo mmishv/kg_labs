@@ -115,8 +115,8 @@ export class ConverterComponent implements OnInit {
   convertHSLtoHSV() {
     const hslToHsv = (h: number, s: number, l: number, v: number = l + s * Math.min(l, 1 - l)) => [h, v === 0 ? 0 : 2 * (1 - (l / v)), v];
     let hsv = hslToHsv(this.HSL.h, this.HSL.s / 100, this.HSL.l / 100);
-    this.HSV.h = hsv[0];
-    this.HSV.s = hsv[1] * 100;
-    this.HSV.v = hsv[2] * 100;
+    this.HSV.h = Math.round(hsv[0]);
+    this.HSV.s = Math.round(hsv[1] * 100);
+    this.HSV.v = Math.round(hsv[2] * 100);
   }
 }

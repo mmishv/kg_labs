@@ -59,16 +59,16 @@
         <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.h" (input)="onHSVChange()">
       </div>
       <div class="inputs">
-        <input class="input-slider" type="range" id="hsv-s" min="0" max="100" [(ngModel)]="HSL.s"
+        <input class="input-slider" type="range" id="hsv-s" min="0" max="100" [(ngModel)]="HSV.s"
                (input)="onHSVChange()"/>
         <label for="hsv-s">s</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSL.s" (input)="onHSVChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.s" (input)="onHSVChange()">
       </div>
       <div class="inputs">
-        <input class="input-slider" type="range" id="hsv-v" min="0" max="100" [(ngModel)]="HSL.l"
+        <input class="input-slider" type="range" id="hsv-v" min="0" max="100" [(ngModel)]="HSV.v"
                (input)="onHSVChange()"/>
         <label for="hsv-v">v</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSL.l" (input)="onHSVChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.v" (input)="onHSVChange()">
       </div>
     </div>
   </div>
