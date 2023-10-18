@@ -8,19 +8,19 @@
         <input class="input-slider" type="range" id="rgb-r" min="0" max="255" [(ngModel)]="RGB.r"
                (input)="onRGBChange()"/>
         <label for="rgb-r">r</label>
-        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.r" (input)="onRGBChange()">
+        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.r" (keydown.enter)="RGBChange('r')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="rgb-g" min="0" max="255" [(ngModel)]="RGB.g"
                (input)="onRGBChange()"/>
         <label for="rgb-g">g</label>
-        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.g" (input)="onRGBChange()">
+        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.g" (keydown.enter)="RGBChange('g')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="rgb-b" min="0" max="255" [(ngModel)]="RGB.b"
                (input)="onRGBChange()"/>
         <label for="rgb-b">b</label>
-        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.b" (input)="onRGBChange()">
+        <input class="form-control" type="number" min="0" max="255" [(ngModel)]="RGB.b" (keydown.enter)="RGBChange('b')">
       </div>
     </div>
     <div class="model cmyk">
@@ -29,25 +29,25 @@
         <input class="input-slider" type="range" id="cmyk-c" min="0" max="100" [(ngModel)]="CMYK.c"
                (input)="onCMYKChange()"/>
         <label for="cmyk-c">c</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.c" (input)="onCMYKChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.c" (keydown.enter)="CMYKChange('c')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="cmyk-m" min="0" max="100" [(ngModel)]="CMYK.m"
                (input)="onCMYKChange()"/>
         <label for="cmyk-m">m</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.m" (input)="onCMYKChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.m" (keydown.enter)="CMYKChange('m')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="cmyk-y" min="0" max="100" [(ngModel)]="CMYK.y"
                (input)="onCMYKChange()"/>
         <label for="cmyk-y">y</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.y" (input)="onCMYKChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.y" (keydown.enter)="CMYKChange('y')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="cmyk-k" min="0" max="100" [(ngModel)]="CMYK.k"
                (input)="onCMYKChange()"/>
         <label for="cmyk-k">k</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.k" (input)="onCMYKChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="CMYK.k" (keydown.enter)="CMYKChange('k')">
       </div>
     </div>
     <div class="model hsv">
@@ -56,19 +56,19 @@
         <input class="input-slider" type="range" id="hsv-h" min="0" max="360" [(ngModel)]="HSV.h"
                (input)="onHSVChange()"/>
         <label for="hsv-h">h</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.h" (input)="onHSVChange()">
+        <input class="form-control" type="number" min="0" max="360" [(ngModel)]="HSV.h" (keydown.enter)="HSVChange('h')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="hsv-s" min="0" max="100" [(ngModel)]="HSV.s"
                (input)="onHSVChange()"/>
         <label for="hsv-s">s</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.s" (input)="onHSVChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.s" (keydown.enter)="HSVChange('s')">
       </div>
       <div class="inputs">
         <input class="input-slider" type="range" id="hsv-v" min="0" max="100" [(ngModel)]="HSV.v"
                (input)="onHSVChange()"/>
         <label for="hsv-v">v</label>
-        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.v" (input)="onHSVChange()">
+        <input class="form-control" type="number" min="0" max="100" [(ngModel)]="HSV.v" (keydown.enter)="HSVChange('v')">
       </div>
     </div>
   </div>
