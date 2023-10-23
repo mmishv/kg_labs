@@ -3,8 +3,14 @@ services:
   angular:
     container_name: angular
     build:
-      context: .
+      context: angular
       dockerfile: Dockerfile
     ports:
       - "4200:4200"
-
+  python:
+    container_name: kg-python
+    build:
+      context: ./fastapi
+    command: sh -c "uvicorn src.main:app --host 0.0.0.0 --port 8005 --reload"
+    ports:
+      - "8005:8005"

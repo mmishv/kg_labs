@@ -1,0 +1,31 @@
+.image-container {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.image {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 40vw;
+  padding: 20px;
+}
+
+.choose-img {
+  width: 40%;
+  vertical-align: middle;
+}
+
+.source {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  border: none !important;
+}

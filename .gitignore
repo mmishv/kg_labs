@@ -61,7 +61,7 @@ libpeerconnection.log/
 npm-debug.log
 testem.log
 typings/
-.angular/
+angular/.angular/
 
 # e2e
 e2e/*.js

@@ -1,0 +1,12 @@
+<div class="source">
+  <div class="choose-img mb-3">
+    <input class="form-control form-control-lg" type="file" (change)="onFileSelected($event)" accept="image/*">
+  </div>
+  <img *ngIf="originalImage" [src]="getImageUrl()" alt="Selected Image">
+</div>
+<div *ngIf="Object.keys(processedImages).length > 0" class="image-container">
+  <div *ngFor="let imageName of Object.keys(processedImages)" class="image">
+    <h3>{{ imageName }}</h3>
+    <img [src]="dataURItoBlob(processedImages[imageName])" alt="{{ imageName }}">
+  </div>
+</div>

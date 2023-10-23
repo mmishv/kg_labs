@@ -9,20 +9,28 @@ import { MenuComponent } from './menu/menu.component';
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ColorPickerModule} from "@iplab/ngx-color-picker";
+import { ImageProcessingComponent } from './lab2/image-processing/image-processing.component';
+import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
     ConverterComponent,
     MenuComponent,
+    ImageProcessingComponent,
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    ColorPickerModule
+    ColorPickerModule,
+    NgIf,
+    NgForOf,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
