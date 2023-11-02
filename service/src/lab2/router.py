@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile
 from starlette.responses import JSONResponse
-from src.lab2.service import process_image
+from service.src.lab2.service import process_image
 router = APIRouter()
 
 
