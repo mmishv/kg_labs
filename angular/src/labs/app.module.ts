@@ -12,6 +12,7 @@ import {ColorPickerModule} from "@iplab/ngx-color-picker";
 import { ImageProcessingComponent } from './lab2/image-processing/image-processing.component';
 import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
+import { RasterAlgorithmsComponent } from './lab3/raster-algorithms/raster-algorithms.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {HttpClientModule} from "@angular/common/http";
     ConverterComponent,
     MenuComponent,
     ImageProcessingComponent,
+    RasterAlgorithmsComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import {HttpClientModule} from "@angular/common/http";
     ColorPickerModule,
     NgIf,
     NgForOf,
-    NgOptimizedImage,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

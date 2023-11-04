@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="algorithm">
+    <div class="settings">
+      <div class="point">
+        <div class="inputs">
+          <label for="x1">x1</label>
+          <input id="x1" class="form-control" type="number" [(ngModel)]="x1"/>
+        </div>
+        <div class="inputs">
+          <label for="x2">x2</label>
+          <input id="x2" class="form-control" type="number" [(ngModel)]="x2"/>
+        </div>
+      </div>
+      <div class="point">
+        <div class="inputs">
+          <label for="y1">y1</label>
+          <input id="y1" class="form-control" type="number" [(ngModel)]="y1"/>
+        </div>
+        <div class="inputs">
+          <label for="y2">y2</label>
+          <input id="y2" class="form-control" type="number" [(ngModel)]="y2"/>
+        </div>
+      </div>
+    </div>
+    <button (click)="stepByStep()">Step-by-step</button>
+    <button (click)="Bresenham()">Bresenham</button>
+  </div>
+  <div class="canvas-container">
+    <canvas #canvas width="400" height="400"></canvas>
+  </div>
+  <div class="logs">
+    <div class="clear-btn">
+      <button (click)="clear()">Clear</button>
+    </div>
+    <div *ngFor="let message of getMessages()">
+      <div class="message">{{ message }}</div>
+    </div>
+  </div>
+</div>

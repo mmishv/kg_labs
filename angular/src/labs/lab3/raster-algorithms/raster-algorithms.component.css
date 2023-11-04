@@ -1,0 +1,58 @@
+.container {
+  display: inline-flex;
+  min-width: 100%;
+}
+
+.inputs, .point {
+  display: inline-flex;
+}
+
+label {
+  margin: 3px;
+  font-size: large;
+  color: #657786;
+}
+
+.form-control {
+  margin-left: 20px;
+  margin-bottom: 3px;
+  width: 30%;
+  height: 80%;
+}
+
+canvas {
+  margin: 10px;
+}
+
+.algorithm {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.message {
+  color: #657786;
+  font-size: smaller;
+}
+button{
+  background-color: #657786;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+  outline: none;
+}
+.logs {
+  margin-left: 20px;
+}
+
+.clear-btn {
+  margin: 10px;
+}
